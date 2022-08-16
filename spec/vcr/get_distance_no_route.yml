@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mapbox.com/directions/v5/mapbox/driving/38.98333,45.03333;69.3423428366489,88.21364245388949?access_token=pk.eyJ1Ijoibmlrb2xhaWdvcmJ1bm92IiwiYSI6ImNsNm5veDg1ZDAyd2Yzam1sbnprZnAwYTYifQ.Ix2UzqHEHVU0E1-jqXsB4Q&alternatives=false&geometries=geojson&overview=simplified&steps=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.mapbox.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '100'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 15 Aug 2022 11:27:48 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Mapbox-Request-Id:
+      - urC5BVkqMmi-xeZCZ72y7hbUV0RNhBOjjTtZ90fGo-SVbzVLVisiOg==
+      Cache-Control:
+      - max-age=3600
+      X-Mapbox-Routing-Engine:
+      - v2.0
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 f74ebd28d1b7fe154fb59d89abda909a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - JAC2oA0X-1WSS0OzVCKuR8u-s_HidXRv5-V6J2ACb3Beb8zuU7oh8w==
+      Age:
+      - '242'
+    body:
+      encoding: UTF-8
+      string: '{"code":"NoSegment","message":"Could not find a matching segment for
+        input coordinates","routes":[]}'
+  recorded_at: Mon, 15 Aug 2022 11:31:50 GMT
+recorded_with: VCR 6.1.0
